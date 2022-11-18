@@ -1,0 +1,47 @@
+#top {
+  width: 100%;
+  padding: 26px 0 25px;
+  background-color: $_yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0;
+  margin-bottom: 40px;
+}
+
+.top_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.logo {
+  width: 190px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.logo p {
+  color: $_brown;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.fa-book {
+  color: $_brown;
+  font-size: 32px;
+}
+.top-text {
+  font-family: "cardo";
+  font-size: 27px;
+  color: rgb(40, 39, 39);
+  margin: 0 15px;
+}
+.current_data {
+  color: rgb(2, 30, 17);
+  font-size: 27px;
+  margin: 0 15px;
+}

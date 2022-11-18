@@ -1,0 +1,224 @@
+.main-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.todo-column {
+  margin: 0px 15px;
+  width: 540px;
+}
+.todo-column__header {
+  width: 100%;
+  border: 2px solid $_brown;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: $_yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.todo-column__header--title {
+  color: rgb(40, 39, 39);
+  font-size: 25px;
+  font-family: "cardo";
+  text-transform: capitalize;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  align-items: center;
+}
+.add_list {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.add_list:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+.fa-plus {
+  padding: 5px;
+  font-size: 18px;
+}
+.remove_list {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.remove_list:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+.remove_list__done {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.remove_list__done:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+
+.fa-trash {
+  font-size: 18px;
+  padding: 5px;
+}
+.todo_counter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ebd4a0;
+  align-items: center;
+  margin: 0 auto 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.counter {
+  color: rgb(40, 39, 39);
+  font-size: 19px;
+  font-family: "cardo";
+  text-transform: capitalize;
+}
+.counter_count {
+}
+.todo_column__item {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.todo_column__item-completed {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card {
+  padding: 15px;
+  background-color: $_yellow;
+  width: 100%;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid black;
+}
+.card_head-logo {
+  font-size: 18px;
+  font-family: "cardo";
+}
+.card_date {
+  font-size: 18px;
+  font-family: "cardo";
+}
+.card_content {
+}
+.card_title {
+  font-size: 20px;
+  font-family: "cardo";
+  margin-bottom: 5px;
+}
+.card_text {
+  font-size: 18px;
+  font-family: "cardo";
+  margin-bottom: 5px;
+  line-height: 23px;
+}
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_author {
+  font-size: 18px;
+  font-family: "cardo";
+}
+.wrap_card_remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65px;
+}
+.card_remove__done {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card_remove__done:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+.card_remove {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card_remove:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+.fa-arrow-right {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.card_move {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card_move:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+
+.card_move__inNew {
+  background-color: $_brown;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card_move__inNew:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: $_yellow;
+}
+.fa-arrow-left {
+  font-size: 18px;
+  padding: 5px;
+}

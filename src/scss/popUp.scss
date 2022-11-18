@@ -1,0 +1,142 @@
+.popup {
+  padding: 15px;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(-50%) scale(0);
+  transition: 0.5s ease-in-out;
+}
+.popup.active {
+  transform: translateY(0%) scale(100%);
+  display: flex;
+  background-color: rgb(128, 128, 128, 0.5);
+}
+.add_task {
+  width: 900px;
+  background-color: $_yellow;
+  padding: 15px;
+  border-radius: 20px;
+  margin: auto;
+}
+.add_task_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 0 5px 0;
+}
+
+.add_task_header-title {
+  font-size: 27px;
+  font-family: "cardo";
+  color: rgb(40, 39, 39);
+}
+.fa-xmark {
+  font-size: 20px;
+  color: rgb(40, 39, 39);
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px 7px;
+  transition: 0.2s;
+}
+.fa-xmark:hover {
+  transform: scale(1.1);
+}
+
+.add_form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.add_form__item--title {
+  font-size: 23px;
+  font-family: "cardo";
+  color: rgb(40, 39, 39);
+}
+.add_form__item--input {
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  font-family: "cardo";
+}
+.add_form__item--input:hover {
+  background-color: rgba(180, 173, 173, 0.3);
+}
+.add_form__item--description {
+  font-size: 23px;
+  font-family: "cardo";
+  color: rgb(40, 39, 39);
+}
+
+.add_form__item--text {
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  font-family: "cardo";
+}
+.add_form__item--text:hover {
+  background-color: rgba(180, 173, 173, 0.3);
+}
+.author {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  font-family: "cardo";
+}
+.author:hover {
+  background-color: rgba(180, 173, 173, 0.3);
+}
+.add_form__footer {
+  margin-left: auto;
+  display: block;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.create {
+  background-color: $_brown;
+  color: white;
+  font-size: 17px;
+  padding: 7px;
+  border-radius: 15px;
+  border: none;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.create:hover {
+  background-color: white;
+  color: rgb(83, 114, 44);
+}
+.cancel {
+  width: 80px;
+  background-color: $_brown;
+  font-size: 17px;
+  color: white;
+  padding: 7px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cancel:hover {
+  background-color: white;
+  color: rgb(192, 86, 86);
+}

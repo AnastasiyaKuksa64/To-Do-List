@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/index.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="top">
+      <div class="container">
+        <div class="top_wrap">
+          <div class="logo">
+            <p>To do list</p>
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <h1 class="top-text">
+            The secret of success is to take the first step
+          </h1>
+          <div class="current_data">07.07.2022</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-wrap">
+          <!-- make -->
+          <div class="todo-column">
+            <div class="todo-column__header">
+              <span class="todo-column__header--title">Make new task</span>
+              <div class="btn-wrap">
+                <button class="add_list">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="remove_list">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+            <div class="todo_counter">
+              <span class="counter">Total:</span>
+              <span class="counter_count">0</span>
+            </div>
+            <div class="todo_column__item">
+              <!-- card -->
+              <!-- <div class="card">
+                <div class="card_head">
+                  <div class="card_head-logo">To do</div>
+                  <span class="card_date">10.10.2022</span>
+                </div>
+                <div class="card_content">
+                  <h3 class="card_title">Title</h3>
+                  <div class="card_text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minima facere consequuntur sint quod eveniet repellat. Nobis
+                      earum accusamus illum impedit rem, quidem ut ad numquam
+                      inventore consequatur voluptatum, autem ex.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_footer">
+                  <span class="card_author">Tom</span>
+                  <div class="wrap_card_remove">
+                    <button class="card_move">
+                      <i class="fa-regular fa-square-check"></i>
+                    </button>
+                    <button class="card_remove">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+              <!-- end -->
+            </div>
+          </div>
+
+          <!-- completed -->
+          <div class="todo-column">
+            <div class="todo-column__header">
+              <span class="todo-column__header--title">Completed</span>
+              <button class="remove_list__done">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <div class="todo_counter">
+              <span class="counter">Total:</span>
+              <span class="counter_count-copl">0</span>
+            </div>
+            <div class="todo_column__item-completed">
+              <!-- card -->
+              <!-- <div class="card">
+                <div class="card_head">
+                  <div class="card_head-logo">To do</div>
+                  <span class="card_date">10.10.2022</span>
+                </div>
+                <div class="card_content">
+                  <h3 class="card_title">Title</h3>
+                  <div class="card_text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minima facere consequuntur sint quod eveniet repellat. Nobis
+                      earum accusamus illum impedit rem, quidem ut ad numquam
+                      inventore consequatur voluptatum, autem ex.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_footer">
+                  <span class="card_author">Tom</span>
+                  <button class="card_remove">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div> -->
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup">
+      <div class="add_task">
+        <div class="add_task_header">
+          <h2 class="add_task_header-title">Fill in all input fields</h2>
+          <div class="btn_close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="add_task__content">
+          <form class="add_form">
+            <div class="add_form__item">
+              <label class="add_form__item--title" for="task-title"
+                >Title</label
+              >
+              <input
+                class="add_form__item--input"
+                id="task-title"
+                type="text"
+                placeholder="Enter title"
+              />
+            </div>
+
+            <div class="add_form__item">
+              <label class="add_form__item--description" for="task_text"
+                >Description</label
+              >
+              <textarea
+                class="add_form__item--text"
+                id="task_text"
+                type="text"
+                placeholder="Enter description"
+              ></textarea>
+            </div>
+            <div class="add_form__item">
+              <label class="add_form__item--title" for="task-title"
+                >Author</label
+              >
+              <input
+                class="author"
+                id="task_author"
+                type="text"
+                placeholder="Author"
+              />
+            </div>
+            <div class="add_form__footer">
+              <button class="create">Create</button>
+              <button class="cancel">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module" src="./JS/index.js"></script> -->
+    <script type="module" src="./JS/script.js"></script>
+  </body>
+</html>
